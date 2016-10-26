@@ -16,17 +16,17 @@ import java.util.stream.StreamSupport;
  */
 @Controller
 public class HelloPage {
-    private final RegistrationRepository myRepository;
+//    private final RegistrationRepository myRepository;
 
-    @Autowired
-    public HelloPage(@NotNull final RegistrationRepository repository) {
-        myRepository = repository;
-    }
+//    @Autowired
+//    public HelloPage(@NotNull final RegistrationRepository repository) {
+//        myRepository = repository;
+//    }
 
     @GetMapping("/")
     public String welcome(Map<String, Object> model) {
         model.put("time", new Date());
-        model.put("registrations", StreamSupport.stream(myRepository.findAll().spliterator(), false).collect(Collectors.toList()));
+//        model.put("registrations", StreamSupport.stream(myRepository.findAll().spliterator(), false).collect(Collectors.toList()));
         return "welcome";
     }
 }
