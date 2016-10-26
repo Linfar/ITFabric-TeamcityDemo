@@ -1,6 +1,6 @@
 package com.example.web;
 
-import com.example.db.RegistrationRepository;
+//import com.example.db.RegistrationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
