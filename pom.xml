@@ -163,7 +163,7 @@
                 <configuration>
                     <useSystemClassLoader>false</useSystemClassLoader>
                     <includes>
-                        <include>com/example/core/**/*</include>
+                        <include>com/example/unit/**/*</include>
                     </includes>
                 </configuration>
             </plugin>
