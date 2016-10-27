@@ -12,6 +12,7 @@ public class CalcTest {
         final Calc calc = new Calc();
 
         BDDAssertions.then(calc.sum(1, 1)).isEqualTo(2);
+        BDDAssertions.then(calc.sum(Long.MAX_VALUE - 1, Long.MAX_VALUE - 1)).isPositive();
     }
 
 }
